@@ -1,0 +1,146 @@
+body{
+	width:1920px;
+	height:1080px;
+}
+.top-bar{
+	float:left;
+	width:100%;
+}
+.blocks{
+	float:left;
+	width:100%;
+}
+.top-bar li{
+	float: left;
+	list-style-type:none;
+	font-size:64px;
+}
+.tue{
+	width: 50%;
+}
+.tim{
+	text-align:right;
+	width: 25%;
+}
+.tmp{
+	text-align:center;
+	width: 25%;	
+}
+.block1{
+	width:50%;
+	box-sizing: border-box;
+	border: 8px solid #000;
+	float:left;
+	min-height:612px;
+}
+.block1 h1{
+	padding: 0px 25px;
+	font-size: 42px;
+    font-weight: 100;	
+}
+.bl-2{
+	background:#d91c16;
+	min-height:612px;
+	box-sizing: border-box;
+	border: 8px solid #000;
+	border-left:0px;
+	border-bottom:0px;
+		position:relative;
+}
+.bl-3{
+	background:#fee83e;
+	min-height:380px;
+}
+.bl-4{
+	background:#30f42f;
+	min-height:380px;
+	border-left:0px;
+}
+.bl-2 img{
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.top-bar1{
+	float:left;
+	width:100%;	
+	border-bottom: 10px solid #000;
+    margin-bottom: 2px;
+}
+.top-bar1 li{
+	float: left;
+	list-style-type:none;
+	font-size:64px;
+	width:33.3%;
+}
+.tim1{
+	text-align:right;
+}
+.tmp1{
+	text-align:center;
+}
+.block2{
+	width:50%;
+    box-sizing: border-box;
+    border: 10px solid #d91c16;
+	float:left;
+	min-height:612px;
+}
+.block2 h1{
+	padding: 0px 25px;
+	font-size: 42px;
+    font-weight: 100;	
+}
+.bll-2{
+	background:#2d7dd3;
+	min-height:612px;
+    box-sizing: border-box;
+    border: 10px solid #000;	
+	border-bottom:0px;
+	position:relative;
+}
+.bll-2 img{
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.bll-3{
+	background:#fee83e;
+	min-height:380px;
+    box-sizing: border-box;
+    border: 10px solid #000;	
+	border-right:0px;
+}
+.bll-4{
+	background:#30f42f;
+	min-height:380px;
+    box-sizing: border-box;
+    border: 10px solid #000;	
+}
+.act-content{
+	float:left;
+	width:100%;
+    padding: 0px 25px;	
+}
+.act-content h2{
+	font-weight:bolder;
+    font-size: 36px;
+    margin: 0px;	
+}
+.act-content p{
+    font-size: 32px;
+    margin: 0px;	
+}
+.und{
+	border-bottom: 2px solid #000;
+    display: inline-block;
+    font-weight: bolder !important;	
+}

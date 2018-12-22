@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="refresh" content="2">
+        <title>
+            Sample page 1
+        </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="top-bar">
+			<li class="tue" id="para1"></li>
+			<li class="tmp">Temp</li> 
+			<frame name = "f2" src = "clock.htm" />
+			<li class="tim" id="para2"></li>
+		</div>
+		<div class="blocks">
+			<div class="block1">
+				<h1>Daily Activity Calender</h1>
+			</div>
+			<div class="block1 bl-2">
+				<img src="picasso.jpg">
+			</div>
+			<div class="block1 bl-3">
+				<h1>Family updates</h1>
+			</div>			
+			<div class="block1 bl-4">
+				<h1>Affirmation/Sports/This day in History/Fun Facts/News Source</h1>
+			</div>
+		</div>
+		
+		
+		<script>
+		document.getElementById("para1").innerHTML = formatAMPM1();
+
+function formatAMPM1() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear();
+}
+
+		document.getElementById("para2").innerHTML = formatAMPM2();
+
+function formatAMPM2() {
+var dt = new Date();
+if (parseInt(dt.getMinutes()) < 10) {minutes = "0" + dt.getMinutes();} else minutes = dt.getMinutes();
+if (parseInt(dt.getSeconds()) < 10) {seconds = "0" + dt.getSeconds();} else seconds = dt.getSeconds();
+var period = dt.getHours() >= 12 ? 'PM' : 'AM';
+var time = dt.getHours() + ":" + minutes + ":" + seconds + " " + period;
+return time;
+}
+		</script>
+    </body>
+</html>
