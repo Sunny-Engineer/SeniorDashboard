@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Dashboard Layout 6-1x2
+        </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="top-bar">
+			<li id="para1"></li>
+			<li class="tmp1">Temperature</li> 
+			<li class="tim1" id="time-part"></li>
+		</div>
+		<div class="blocks">
+		<div class="bl2 b-bdr">
+			<div class="bl12">
+			<h2>Where can I get some?</h2>
+				<img src="gr4.png">
+			</div>	
+			<div class="bl3">
+				<img src="gr5.png">
+			</div>			
+		</div>
+			<div class="bl1 bl-img">
+			<h2>Where can I get some?</h2>
+			<p>There are many variations of passages of Lorem Ipsum available,
+			but the majority have suffered alteration in some form, by injected humour,
+			or randomised words which don't look even slightly believable. If you are going 
+			to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing .</p>
+				<img src="gr6.png">
+			<p>There are many variations of passages of Lorem Ipsum available,
+			but the majority have suffered alteration in some form, by injected 
+			humour, or randomised words which don't look even slightly believable. 
+			If you are going to use a passage of Lorem Ipsum, you need to be sure there 
+			isn't anything embarrassing .There are many variations of passages of Lorem
+			Ipsum available, but the majority have suffered alteration in some form, by 
+			injected humour, or randomised words which don't look even slightly believable.
+			If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing .</p>	
+			</div>		
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+		<script>
+		document.getElementById("para1").innerHTML = formatAMPM1();
+
+function formatAMPM1() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+','+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear();
+}
+
+$(document).ready(function() {
+    var interval = setInterval(function() {
+        var momentNow = moment();
+        $('#time-part').html(momentNow.format(' hh:mm:ss A'));
+    }, 100);
+});
+		</script>		
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Dashboard Layout 4-3x2x3
+        </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="top-bar">
+			<li id="para1"></li>
+			<li class="tmp1">Temperature</li> 
+			<li class="tim1" id="time-part"></li>
+		</div>
+		<div class="blocks">
+			<div class="block1">
+				<div class="content1">
+					<p>Top suppliers by partner status</p>
+					<img src="star1.png">
+					<img src="star2.png">
+					<img src="star3.png">
+				</div>
+				<div class="content2">
+					<img src="screen.png">
+				</div>
+				<div class="content3">
+					<h2>Where does it come from?</h2>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+					It has roots in a piece of classical Latin literature from 45 BC, making 
+					it over 2000 years old.Richard McClintock, a Latin professor at Hampden-Sydney
+					College in Virginia, looked up one of the more obscure Latin words</p>
+				</div>
+			</div>
+			<div class="block2">
+				<div class="bl-con1">
+					<img src="graph.png">
+					<h2>Where can I get some?</h2>
+					<p>There are many variations of passages of Lorem Ipsum available,
+					but the majority have suffered alteration in some form, by injected
+					humour, or randomised words which don't look even slightly believable.
+					If you are going to use a passage of Lorem Ipsum, you need to be sure
+					there isn't anything embarrassing hidden in the middle of text.</p>
+				</div>
+				<div class="bl-con2">
+					<img src="graph2.png">
+				</div>
+			</div>
+			<div class="block3">
+				<div class="bl3-con1">
+					<h2>Where does it come from?</h2>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+					It has roots in a piece of classical Latin literature from 45 BC, making 
+					it over 2000 years old.Richard McClintock, a Latin professor at Hampden-Sydney
+					College in Virginia, looked up one of the more obscure Latin words</p>
+					<img src="graph3.png">
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+					It has roots in a piece of classical Latin literature from 45 BC.</p>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+		<script>
+		document.getElementById("para1").innerHTML = formatAMPM1();
+
+function formatAMPM1() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+','+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear();
+}
+
+$(document).ready(function() {
+    var interval = setInterval(function() {
+        var momentNow = moment();
+        $('#time-part').html(momentNow.format(' hh:mm:ss A'));
+    }, 100);
+});
+		</script>		
+    </body>
+</html>

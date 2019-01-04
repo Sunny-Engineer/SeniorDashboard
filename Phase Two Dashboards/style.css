@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+body{
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+img{
+	max-width:100%;
+}
+
+
+
+.top-bar{
+	float:left;
+	width:100%;	
+    margin-bottom: 2px;
+	background:#000;
+	padding:10px 20px;
+}
+.top-bar li{
+	float: left;
+	list-style-type:none;
+	color:#fff;
+	font-size:50px;
+	width:33.3%;
+	font-family: 'Lato', sans-serif;
+	font-weight:100;
+}
+.tim1{
+	text-align:right;
+}
+.tmp1{
+	text-align:center;
+}
+
+#time-part {
+    font-size: 50px;
+    color:#fff;
+}
+.blocks{
+	float:left;
+	width:100%;	
+	border:1px solid #d1d1d1;
+	margin:15px;	
+}
+.block1{
+	width: 25%;
+    float: left;
+    padding: 30px 0px;
+	padding-left:15px;
+}
+.content1{
+	padding:0px 30px;
+}
+.content1 img{
+	display:block;
+}
+.content2{
+	padding: 50px 0px;
+}
+.content3 h2{
+	color:#62636e;
+}
+.content3 p{
+	color:#1b1c33;
+	line-height:25px;	
+}
+.content3{
+	padding-right:60px;
+}
+.block2{
+	width: 45%;
+    float: left;
+    padding: 30px 0px;	
+	text-align:center;
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;	
+}
+.bl-con1 h2{
+	color:#62636e;
+}
+.bl-con1 p{
+	color:#1b1c33;
+	line-height:25px;
+}
+.bl-con1{
+	padding: 0px 70px;
+}
+.bl-con2 {
+	padding:50px 0px;
+    border-top: 1px solid #d1d1d1;	
+}
+.block3{
+	width: 25%;
+    float: left;
+    padding: 30px 30px;	
+}
+.bl3-con1 img{
+	padding:50px 0px;
+    margin: 0 auto;
+    display: block;	
+}
+.bl1{
+	float:left;
+	width:50%;
+	padding:30px 0px 0;
+}
+.bl1 img{
+	padding:0px 30px;
+}
+.bl12{
+	padding:0px 30px;
+}
+.bl2{
+	float:left;
+	width:49%;
+border-left: 1px solid #d1d1d1;	
+}
+.bl2 h2{
+	color:#62636e;
+}
+.bl2 p{
+	color:#1b1c33;
+	line-height:25px;
+}
+.bl1 h2{
+	color:#62636e;
+}
+.b-bdr{
+	border-right:1px solid #d1d1d1;
+}
+.bl1 p{
+	color:#1b1c33;
+	line-height:25px;
+}
+.bl-img img{
+	display:block;
+	margin:0 auto;
+	padding:30px 0px;
+}
+.bl2 img,.bl3 img{
+	display:block;
+	margin:0 auto;
+	padding:30px 0px;
+}
+.bl3 h2{
+	color:#62636e;
+}
+.bl3 p{
+	color:#1b1c33;
+	line-height:25px;
+}
+.bl3{
+	padding:0px 30px;
+    border-top: 1px solid #d1d1d1;	
+}
+.bl-img{
+	padding-left: 30px;
+    width: 49%;
+}
